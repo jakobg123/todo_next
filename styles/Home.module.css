@@ -7,6 +7,12 @@
   min-height: 100vh;
 }
 
+.container{
+    border: 1px solid mediumaquamarine;
+    padding: 20px;
+    min-width: 300px;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+.Todo{
+    display: flex;
+    align-items: center;
+    margin-bottom: $xl-space;
+
+    &__ListElementWrapper{
+        display: flex;
+        align-items: center;
+        border: 1px solid $primary;
+        border-radius: $s-space;
+        padding: $md-space;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        flex: 85%;
+    
+        &:hover{
+            background-color: $secondary;
+            border-color: black;
+            color: black;
+        }
+
+        &:active{
+            background-color: $primary-active;
+        }
+    
+        P{
+            margin-right: $md-space;
+        }
+    
+        &__Checked{
+            background-color: $primary;
+    
+            p{
+                color: black;
+            }
+    
+            &:hover{
+                background-color: $primary;                
+            }
+        }
+    
+        input{
+            cursor: pointer;
+        }
+    
+    }
+    
+    &__RemoveTodo{
+        flex: 15%;
+        text-align: center;
+    
+        input{
+            cursor: pointer;
+        }
+    }
+}

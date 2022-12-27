@@ -1,0 +1,7 @@
+@import "./variables.scss";
+
+.TodoList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
