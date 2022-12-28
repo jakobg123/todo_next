@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.Header{
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+
+    &__Title{
+        margin: $lg-space* 2 0;
+    }
+
+    &__Ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid red;
+        margin: $lg-space 0;
+    }
+}

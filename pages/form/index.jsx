@@ -1,18 +1,9 @@
-import { useReducer, useEffect, useCallback } from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from "../../styles/Home.module.css"
+import Head from "next/head"
+import Header from "../components/Header"
+import Form from "../components/Form.jsx"
 
-import CreateTodo from "./components/CreateTodo"
-import TodoList from "./components/TodoList"
-import Header from "./components/Header"
-
-
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  
+const FormPage = () => {
   return (
     <>
       <Head>
@@ -26,10 +17,11 @@ export default function Home() {
       </div>
       <main className={styles.main}>
         <div className={styles.container}>
-            <CreateTodo />
-            <TodoList />
+            <Form /> 
         </div>
       </main>
     </>
   )
 }
+
+export default FormPage

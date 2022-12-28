@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+.Form{
+    // &__Group{
+    //     display: flex;
+    //     flex-direction: column;
+    //     margin-bottom: $md-space *2 ;
+    //     border: 1px solid grey;
+    //     padding: $s-space;
+    // }
+
+    // &__Label{
+    //     margin-bottom: $md-space;
+    // }
+
+    // &__Input{
+    //     padding: $md-space;
+    // }
+
+    &__Group{
+        // border: 1px solid green;
+        position: relative;
+        transform: translate(110%, 0);
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    }
+
+    &__Enter{
+        // border: 1px solid green;
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+
+    &__Leave{
+        // border: 1px solid green;
+        position: relative;
+        transform: translate(-110%, 0);
+        opacity: 0;
+    }
+
+    &__SubmitWrapper{
+    }
+
+    &__Submit{
+        padding: $md-space;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+
+        &__Show{
+            opacity: 1;
+        }
+    }
+
+
+}
